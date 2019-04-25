@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: books
+logging.level.org.springframework.boot.autoconfigure.mongo.embedded: on
+logging.level.org.mongodb: on
