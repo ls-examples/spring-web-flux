@@ -1,0 +1,60 @@
+### Book list
+GET http://localhost:8090/books
+
+### Book view
+GET http://localhost:8090/book/5cc0ee641bdf6735814d116d
+
+
+### Add book
+POST http://localhost:8090/book
+Content-Type: application/json
+
+{
+  "title": "some title",
+  "year": 2019,
+  "description": "some description",
+  "author": {
+    "fullname": "some author"
+  },
+  "genres": [
+    {
+      "name": "Poem"
+    },
+    {
+      "name": "Crime"
+    }
+  ]
+}
+
+
+### Edit book
+PUT http://localhost:8090/book/5cc0ee641bdf6735814d116d
+Content-Type: application/json
+
+{
+  "title": "wstes78",
+  "author": {
+    "fullname": "Пушкин А.С."
+  },
+  "year": 2018,
+  "description": "some description",
+  "genres": [
+    {
+      "name": "Poem"
+    },
+    {
+      "name": "Crime"
+    }
+  ]
+}
+
+
+### Delete book
+DELETE http://localhost:8090/book/5cc18e0e1bdf673bbc46c815
+Content-Type: application/json
+
+###
+
+
+
+
